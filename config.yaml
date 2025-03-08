@@ -1,0 +1,7 @@
+texts:
+  - id: text-content
+    content: "Default text content"
+
+photos:
+  - id: photo-upload
+    path: "path/to/default/photo.jpg"
