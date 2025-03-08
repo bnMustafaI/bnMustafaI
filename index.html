@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kişisel Sitem</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="menu-overlay" id="menuOverlay"></div>
+  
+  <nav>
+    <div class="logo">Kişisel Sitem</div>
+    <div class="hamburger" id="hamburgerMenu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#anasayfa">Ana Sayfa</a></li>
+      <li><a href="#duyurular">Duyurular</a></li>
+      <li><a href="#kisaca-ben">Kısaca Ben</a></li>
+      <li><a href="#giris" id="loginBtn">Giriş Yap</a></li>
+    </ul>
+  </nav>
+
+  <div class="login-container" id="loginContainer">
+    <div class="login-form">
+      <h2>Giriş Yap</h2>
+      <form id="adminLoginForm">
+        <div class="form-group">
+          <label for="username">Kullanıcı Adı</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Şifre</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Giriş Yap</button>
+      </form>
+      <div class="close-btn" id="closeLogin">&times;</div>
+    </div>
+  </div>
+
+  <section id="anasayfa" class="section">
+    <div class="container">
+      <h1>Ana Sayfa</h1>
+      <div class="content">
+        <div class="profile-image">
+          <img src="https://via.placeholder.com/200" alt="Profil Resmi">
+        </div>
+        <div class="about-me">
+          <h2>Merhaba, Ben [Adınız]</h2>
+          <p>Buraya kendiniz hakkında kısa bir tanıtım yazabilirsiniz. Hobileriniz, ilgi alanlarınız ve kendiniz hakkında paylaşmak istediğiniz bilgileri ekleyin.</p>
+          <p>Örneğin, teknoloji meraklısı biri olarak, web geliştirme ve oyunlar hakkında bilgi paylaşmayı seviyorum. Bu site üzerinden benimle ilgili bilgilere ve ilgilendiğim oyunlar hakkında duyurulara ulaşabilirsiniz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="duyurular" class="section">
+    <div class="container">
+      <h1>Duyurular</h1>
+      <div class="announcements">
+        <div class="announcement-card">
+          <div class="game-logo">
+            <img src="https://via.placeholder.com/100?text=Minecraft" alt="Minecraft">
+          </div>
+          <div class="announcement-content">
+            <h3>Minecraft'ın Yeni Güncellemesi</h3>
+            <p class="date">15 Haziran 2023</p>
+            <p>Minecraft'ın yeni güncellemesi, yeni mob'lar, bloklar ve oyun mekanikleri ekleyecek. Daha fazla ayrıntı için resmi web sitesini ziyaret edin.</p>
+          </div>
+        </div>
+
+        <div class="announcement-card">
+          <div class="game-logo">
+            <img src="https://via.placeholder.com/100?text=Valorant" alt="Valorant">
+          </div>
+          <div class="announcement-content">
+            <h3>Valorant Yeni Ajan Duyurusu</h3>
+            <p class="date">10 Haziran 2023</p>
+            <p>Valorant'a yeni bir ajan ekleniyor! Yeni yetenekler ve oyun stratejileri ile oyuna taze bir soluk getirecek.</p>
+          </div>
+        </div>
+
+        <div class="announcement-card">
+          <div class="game-logo">
+            <img src="https://via.placeholder.com/100?text=Fortnite" alt="Fortnite">
+          </div>
+          <div class="announcement-content">
+            <h3>Fortnite Yeni Sezon</h3>
+            <p class="date">5 Haziran 2023</p>
+            <p>Fortnite'ın yeni sezonu başlıyor! Yeni silahlar, karakterler ve harita değişiklikleri ile heyecan dorukta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kisaca-ben" class="section">
+    <div class="container">
+      <h1>Kısaca Ben</h1>
+      <div class="about-section">
+        <div class="personal-info">
+          <h2>Kendim Hakkında</h2>
+          <p>Buraya kendiniz hakkında biraz daha detaylı bilgi ekleyebilirsiniz. Doğum tarihiniz, eğitim durumunuz, mesleğiniz ve diğer kişisel bilgilerinizi paylaşabilirsiniz.</p>
+          <p>Hayattaki hedefleriniz ve yapmaktan keyif aldığınız şeylerden bahsedebilirsiniz.</p>
+        </div>
+        <div class="family-info">
+          <h2>Ailem</h2>
+          <p>Aile üyeleriniz hakkında kısa bilgiler verebilirsiniz. Kardeşleriniz, ebeveynleriniz veya eşiniz ve çocuklarınızdan bahsedebilirsiniz.</p>
+          <p>Ailenizle birlikte yaptığınız aktiviteler veya paylaştığınız anılardan bahsetmek için bu bölümü kullanabilirsiniz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="adminPanel" class="admin-panel">
+    <div class="admin-container">
+      <h1>Admin Paneli</h1>
+      <div class="admin-options">
+        <div class="admin-option">
+          <h3>İçerik Yönetimi</h3>
+          <ul>
+            <li><button id="editAnaSayfa">Ana Sayfa Düzenle</button></li>
+            <li><button id="editDuyurular">Duyurular Düzenle</button></li>
+            <li><button id="editKisacaBen">Kısaca Ben Düzenle</button></li>
+          </ul>
+        </div>
+        <div class="admin-option">
+          <h3>Site Ayarları</h3>
+          <ul>
+            <li><button id="changeTheme">Tema Değiştir</button></li>
+            <li><button id="changePassword">Şifre Değiştir</button></li>
+          </ul>
+        </div>
+      </div>
+      <button id="logoutBtn">Çıkış Yap</button>
+    </div>
+  </div>
+
+  <div class="content-editor" id="contentEditor">
+    <div class="editor-container">
+      <h2 id="editorTitle">İçerik Düzenle</h2>
+      <textarea id="editorContent"></textarea>
+      <div class="editor-buttons">
+        <button id="saveContent">Kaydet</button>
+        <button id="cancelEdit">İptal</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Kişisel Sitem. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
